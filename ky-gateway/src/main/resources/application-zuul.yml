@@ -1,0 +1,29 @@
+
+zuul:
+  prefix: /api
+  routes:
+    user-service: /user/**
+    icq-service: /icq/**
+    mall-service: /mall/**
+  sensitive-headers:          #覆盖敏感头信息
+
+ky:
+  token:
+   inDate: 7200  #token有效期 inDate秒之后过期
+  filter:
+    allowPaths:
+      - /api/user/login
+ribbon:
+  eureka:
+    enabled: true
+  ConnectTimeout: 7000   # ribbon链接超时时长
+  ReadTimeout: 7000 # ribbon读取超时时长
+  MaxAutoRetries: 1  # 当前服务重试次数
+  MaxAutoRetriesNextServer: 0
+  OkToRetryOnAllOperations: true  # 是否对所有的请求方式都重试，只对get请求重试
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true

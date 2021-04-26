@@ -1,0 +1,7 @@
+com\kaiyu\conf\CORSConfiguration.class
+com\kaiyu\GatewayApplicationStart.class
+com\kaiyu\conf\FilterConfig.class
+com\kaiyu\conf\AuthPostFilter.class
+com\kaiyu\conf\AuthFilter.class
+com\kaiyu\conf\AuthPreFilter.class
+com\kaiyu\pojo\UserInfo.class
