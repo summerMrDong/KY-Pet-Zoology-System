@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "wx",
+      "type": "com.kaiyu.conf.WXConfig",
+      "sourceType": "com.kaiyu.conf.WXConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wx.app-id",
+      "type": "java.lang.String",
+      "description": "小程序 appId",
+      "sourceType": "com.kaiyu.conf.WXConfig"
+    },
+    {
+      "name": "wx.secret",
+      "type": "java.lang.String",
+      "description": "小程序 appSecret",
+      "sourceType": "com.kaiyu.conf.WXConfig"
+    },
+    {
+      "name": "wx.wx-url",
+      "type": "java.lang.String",
+      "description": "登录请求地址",
+      "sourceType": "com.kaiyu.conf.WXConfig"
+    }
+  ],
+  "hints": []
+}
